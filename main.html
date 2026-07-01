@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<title>Видео</title>
-<style>
-  body { margin: 0; background: #000; display: flex; justify-content: center; align-items: center; height: 100vh; }
-  video { width: 100%; height: 100%; }
-</style>
+  <meta charset="UTF-8">
+  <title>Видео</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      height: 100%;
+      overflow: hidden;
+    }
+    video {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      object-fit: contain;
+    }
+  </style>
 </head>
 <body>
-
-<!-- ВОТ СЮДА вставляй весь iframe-код, который тебе дал ВК (целиком, с тегом iframe) -->
-<iframe width="100%" height="100%" src="https://rutube.ru/play/embed/4083974a54a8264bbe2c23467f1fd190/" style="border: none;" allow="clipboard-write; autoplay" allowFullScreen></iframe>
-  
+  <video
+    controls
+    autoplay
+    playsinline
+    src="https://cobalt.omega.wolfy.love/tunnel?id=dElB-h-YtzVS-O-WoAoES&exp=1782910744829&sig=IqyatX5UTIhbJc44cpPdLHP3qF2wh85G1UrSp3bbpf0&sec=O8nnmU79Aazq2Q4OgWCP1BfHNGEkxHUEmEoY8zjL6qg&iv=rzLEBOMnrLzqvE8gYZ682Q">
+    Ваш браузер не поддерживает тег video.
+  </video>
 </body>
 </html>
